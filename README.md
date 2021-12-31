@@ -1,37 +1,37 @@
 # V2Ray Heroku
 
-**若需部署 V2Ray VLESS，请转到 [vless](https://github.com/6nj7/6nj7-v2ray-heroku/tree/vless) 分支�?*
+**�仿��函蔡 V2Ray VLESS嚗窈頧砍 [vless](https://github.com/6nj7/6nj7-v2ray-heroku/tree/vless) ��?*
 
-## 概述
+## 璁膩
 
-本专案用于在 Heroku 上部�?V2Ray WebSocket，在合理使用的程度下，本镜像不会因为大量占用资源而导致封号�?
-部署完成后，每次启动应用时，运行�?V2Ray 将始终为最新版�?
-## 部署
+�砌�獢鈭 Heroku 銝蝵?V2Ray WebSocket嚗��雿輻��摨虫�嚗��銝��蛹憭折��韏��紡�游��瑯?
+�函蔡摰���瘥活�臬摨�塚�餈��?V2Ray 撠�蝏蛹��啁��?
+## �函蔡
 
-### 步骤
+### 甇仿炊
 
- 1. Fork 本专案到自己�?GitHub 账户（用户名�?`example` 为例�? 2. 修改专案名称，注意不要包�?`v2ray` �?`heroku` 两个关键字（修改后的专案名以 `demo` 为例�? 3. 修改 `README.md`，将 `6nj7/6nj7-v2ray-heroku` 替换为自己的内容（如 `example/demo`�?
-> [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=//https://github.com/6nj7/6nj7-v2ray-heroku)
+ 1. Fork �砌�獢�芸楛�?GitHub 韐行嚗�瑕�隞?`example` 銝箔�嚗? 2. 靽格銝��妍嚗釣��閬��?`v2ray` �?`heroku` 銝支葵�喲摮�靽格��銝��誑 `demo` 銝箔�嚗? 3. 靽格 `README.md`嚗� `6nj7/6nj7-v2ray-heroku` �踵銝箄撌梁��捆嚗� `example/demo`嚗?
+> [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=//https://github.com/zhy18036775875/6nj7-v2ray-heroku)
 
- 4. 回到专案首页，点击上面的链接以部�?V2Ray
+ 4. �銝�擐△嚗�颱��Ｙ��暹隞仿蝵?V2Ray
 
-### 变量
+### ��
 
-对部署时需设定的变量名称做如下说明�?
-| 变量 | 默认�?| 说明 |
+撖寥蝵脫�霈曉�����蝘啣�憒�霂湔��?
+| �� | 暺恕�?| 霂湔� |
 | :--- | :--- | :--- |
-| `ID` | `ad806487-2d26-4636-98b6-ab85cc8521f7` | VMess 用户�?ID，用于身份验证，�?UUID 格式 |
-| `AID` | `64` | 为进一步防止被探测所设额�?ID，即 AlterID，范围为 0 �?65535 |
-| `WSPATH` | `/` | WebSocket 所使用�?HTTP 协议路径 |
+| `ID` | `ad806487-2d26-4636-98b6-ab85cc8521f7` | VMess �冽銝?ID嚗鈭澈隞賡�霂�銝?UUID �澆� |
+| `AID` | `64` | 銝箄�銝甇仿甇Ｚ◤�Ｘ��霈暸�憭?ID嚗 AlterID嚗��港蛹 0 �?65535 |
+| `WSPATH` | `/` | WebSocket �雿輻�?HTTP �悅頝臬� |
 
-## 接入 CloudFlare
+## �亙 CloudFlare
 
-以下两种方式均可以将应用接入 CloudFlare，从而在一定程度上提升速度�?
- 1. 为应用绑定域名，并将该域名接�?CloudFlare
- 2. 通过 CloudFlare Workers 反向代理
+隞乩�銝斤��孵��隞亙�摨�亙 CloudFlare嚗��銝摰�摨虫����漲�?
+ 1. 銝箏��函�摰���撟嗅�霂亙���?CloudFlare
+ 2. �� CloudFlare Workers ��隞��
 
-## 注意
+## 瘜冽�
 
- 1. **请勿滥用本专案，类似 Heroku 的免费服务少之又少，且用且珍�?*
- 2. 若使用域名接�?CloudFlare，请考虑启用 TLS 1.3
- 3. AWS 绝大部分 IPv4 地址已被 Twitter 屏蔽
+ 1. **霂瑕皛亦�砌�獢�蝐颱撮 Heroku ��韐寞��∪�銋�撠�銝銝��?*
+ 2. �乩蝙�典���?CloudFlare嚗窈���舐 TLS 1.3
+ 3. AWS 蝏之�典� IPv4 �啣�撌脰◤ Twitter 撅
